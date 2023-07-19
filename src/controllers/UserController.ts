@@ -1,12 +1,15 @@
 import { Request, Response } from 'express';
-import { User } from '../models/User';
+import Users, { IUsers } from '../models/Users'; // Sử dụng import IUser interface
 
-export const getUser = (req: Request, res: Response) => {
-  // Code to fetch user data from the database
-  const user: User = {
-    id: 1,
-    name: 'John Doe',
-    email: 'john@example.com'
-  };
-  res.json(user);
+// Hàm xử lý yêu cầu lấy tất cả người dùng
+export const getAllUsers = async (req: Request, res: Response) => {
+  try {
+    // Tìm tất cả người dùng trong cơ sở dữ liệu
+    const users: IUsers[] = await Users.find();
+
+    res.status(200).json(users);
+  } catch (error: any) {
+    // Xử lý lỗi nếu có
+    res.status(500).json({ message: 'Error getting users', error: error.message });
+  }
 };
