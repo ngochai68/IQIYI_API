@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true // Thêm cấu hình esModuleInterop
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
