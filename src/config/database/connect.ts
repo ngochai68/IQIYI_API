@@ -2,7 +2,7 @@
 import mongoose from 'mongoose';
 
 const dbConfig = {
-  mongodb_uri: 'mongodb://127.0.0.1:27017/mydb'
+  mongodb_uri: 'mongodb://127.0.0.1:27017/iQIYI_Database'
 };
 
 const connectToDatabase = async () => {
