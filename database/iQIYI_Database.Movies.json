@@ -1,0 +1,146 @@
+[{
+  "_id": {
+    "$oid": "64b959d190253592d2210cfc"
+  },
+  "id": 1,
+  "title": "Hoa Nhung",
+  "genre_ids": [
+    6,
+    8
+  ],
+  "region_ids": [
+    6,
+    8
+  ],
+  "year_of_release": 2023,
+  "upload_date": "20/07/2023",
+  "episodes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "views": 686868,
+  "director_ids": [
+    6,
+    8
+  ],
+  "actor_ids": [
+    6,
+    8
+  ],
+  "rating": 1,
+  "numberReviews": 686,
+  "producer": "iQIYI",
+  "img1": "http://localhost:3000/img/a_100480413_m_601_vi_m4_260_360.webp",
+  "img2": "/img/anh2.jpg",
+  "score": 9.5,
+  "total_episodes": 36,
+  "movie_format": 0,
+  "description": "Phim rất hay, bạn nên xem"
+},
+{
+  "_id": {
+    "$oid": "64c1eba155f92303668cd09e"
+  },
+  "id": 2,
+  "title": "Hoa Nhung Hạ",
+  "genre_ids": [
+    6,
+    8
+  ],
+  "region_ids": [
+    6,
+    8
+  ],
+  "year_of_release": 2023,
+  "upload_date": "20/07/2023",
+  "episodes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "views": 686868,
+  "director_ids": [
+    6,
+    8
+  ],
+  "actor_ids": [
+    6,
+    8
+  ],
+  "rating": 1,
+  "numberReviews": 686,
+  "producer": "iQIYI",
+  "img1": "http://localhost:3000/img/a_100480413_m_601_vi_m4_260_360.webp",
+  "img2": "/img/anh2.jpg",
+  "score": 9.5,
+  "total_episodes": 36,
+  "movie_format": 0,
+  "description": "Phim rất hay, bạn nên xem"
+}]

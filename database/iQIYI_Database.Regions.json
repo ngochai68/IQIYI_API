@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "64ba5cc2d8b42cd73025e289"
+  },
+  "id": 1,
+  "name": "Trung Quốc đại lục"
+},
+{
+  "_id": {
+    "$oid": "64ba5dbdd8b42cd73025e28a"
+  },
+  "id": 2,
+  "name": "Hàn Quốc"
+},
+{
+  "_id": {
+    "$oid": "64ba5dc6d8b42cd73025e28b"
+  },
+  "id": 3,
+  "name": "Thái Lan"
+},
+{
+  "_id": {
+    "$oid": "64ba5dd0d8b42cd73025e28c"
+  },
+  "id": 4,
+  "name": "Đài Loan"
+},
+{
+  "_id": {
+    "$oid": "64ba5dd8d8b42cd73025e28d"
+  },
+  "id": 5,
+  "name": "Nhật Bản"
+},
+{
+  "_id": {
+    "$oid": "64ba5de1d8b42cd73025e28e"
+  },
+  "id": 6,
+  "name": "Malaysia"
+},
+{
+  "_id": {
+    "$oid": "64ba5debd8b42cd73025e28f"
+  },
+  "id": 7,
+  "name": "Mỹ"
+},
+{
+  "_id": {
+    "$oid": "64ba5dfbd8b42cd73025e290"
+  },
+  "id": 8,
+  "name": "Anh"
+}]

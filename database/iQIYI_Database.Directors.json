@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "64ba5e11d8b42cd73025e29b"
+  },
+  "id": 1,
+  "name": "Nguyễn Ngọc Hải",
+  "date_of_birth": "22/01/2003",
+  "gender": 0,
+  "regions": 6,
+  "profile_picture": "public/image/hai.jpg"
+}]

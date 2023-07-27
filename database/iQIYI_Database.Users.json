@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "64b94e2790253592d2210cf7"
+  },
+  "id": 1,
+  "user_name": "ngochai2201",
+  "email": "ngochai22012003@gmail.com",
+  "password": "Hai112233",
+  "date_of_birth": "22/01/2003",
+  "gender": 0,
+  "phone_number": "0823787551",
+  "user_type": 1,
+  "movie_ids": []
+}]

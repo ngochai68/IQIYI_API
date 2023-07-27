@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "64bbb2cbd719c173741bd2e1"
+  },
+  "id": 1,
+  "title": "Tập 1",
+  "upload_date": "22/07/2023",
+  "movie_id": 1
+}]

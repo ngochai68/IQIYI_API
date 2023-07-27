@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "64ba49fcd8b42cd73025e265"
+  },
+  "id": 1,
+  "name": "Thanh Xuân"
+},
+{
+  "_id": {
+    "$oid": "64ba4a2cd8b42cd73025e266"
+  },
+  "id": 2,
+  "name": "Bí Ẩn"
+},
+{
+  "_id": {
+    "$oid": "64ba4a33d8b42cd73025e267"
+  },
+  "id": 3,
+  "name": "LGBT"
+},
+{
+  "_id": {
+    "$oid": "64ba4a3ad8b42cd73025e268"
+  },
+  "id": 4,
+  "name": "Cổ Trang"
+},
+{
+  "_id": {
+    "$oid": "64ba4a41d8b42cd73025e269"
+  },
+  "id": 5,
+  "name": "Thành Thị"
+},
+{
+  "_id": {
+    "$oid": "64ba4a48d8b42cd73025e26a"
+  },
+  "id": 6,
+  "name": "Lãng Mạn"
+},
+{
+  "_id": {
+    "$oid": "64ba4a50d8b42cd73025e26b"
+  },
+  "id": 7,
+  "name": "Tình Yêu Ngọt Ngào"
+},
+{
+  "_id": {
+    "$oid": "64ba4a58d8b42cd73025e26c"
+  },
+  "id": 8,
+  "name": "Hôn Nhân"
+},
+{
+  "_id": {
+    "$oid": "64ba4a9fd8b42cd73025e274"
+  },
+  "id": 9,
+  "name": "Tình Tiết"
+},
+{
+  "_id": {
+    "$oid": "64ba4aaed8b42cd73025e275"
+  },
+  "id": 10,
+  "name": "Phim Hài"
+},
+{
+  "_id": {
+    "$oid": "64ba4abfd8b42cd73025e276"
+  },
+  "id": 11,
+  "name": "Gia Đình"
+},
+{
+  "_id": {
+    "$oid": "64ba4aced8b42cd73025e277"
+  },
+  "id": 12,
+  "name": "Tình Bạn"
+},
+{
+  "_id": {
+    "$oid": "64ba4ae8d8b42cd73025e278"
+  },
+  "id": 13,
+  "name": "Viễn Tưởng"
+},
+{
+  "_id": {
+    "$oid": "64ba4af2d8b42cd73025e279"
+  },
+  "id": 14,
+  "name": "Tội Phạm"
+},
+{
+  "_id": {
+    "$oid": "64ba4afcd8b42cd73025e27a"
+  },
+  "id": 15,
+  "name": "Chiến Tranh"
+},
+{
+  "_id": {
+    "$oid": "64ba4b07d8b42cd73025e27b"
+  },
+  "id": 16,
+  "name": "Tiểu Thuyết Chuyển Thể"
+},
+{
+  "_id": {
+    "$oid": "64ba4b12d8b42cd73025e27c"
+  },
+  "id": 17,
+  "name": "Hiện Đại"
+},
+{
+  "_id": {
+    "$oid": "64ba4b1dd8b42cd73025e27d"
+  },
+  "id": 18,
+  "name": "Cổ Đại"
+}]
