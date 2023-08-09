@@ -16,7 +16,7 @@ export const getAllRegions = async (req: Request, res: Response): Promise<void> 
 export const getRegionById = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   try {
-    const region: IRegion | null = await Region.findOne({ id: Number(id) });
+    const region: IRegion | null = await Region.findById(id);
     if (region) {
       res.status(200).json(region);
     } else {
@@ -43,7 +43,7 @@ export const updateRegionById = async (req: Request, res: Response): Promise<voi
   const { id } = req.params;
   try {
     const updatedRegionData: IRegion = req.body; // Dữ liệu cập nhật được gửi qua body request
-    const region: IRegion | null = await Region.findOneAndUpdate({ id: Number(id) }, updatedRegionData, { new: true });
+    const region: IRegion | null = await Region.findByIdAndUpdate(id, updatedRegionData, { new: true });
     if (region) {
       res.status(200).json(region);
     } else {
@@ -58,7 +58,7 @@ export const updateRegionById = async (req: Request, res: Response): Promise<voi
 export const deleteRegionById = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   try {
-    const region: IRegion | null = await Region.findOneAndDelete({ id: Number(id) });
+    const region: IRegion | null = await Region.findByIdAndDelete(id);
     if (region) {
       res.status(200).json({ message: 'Xóa khu vực thành công.' });
     } else {

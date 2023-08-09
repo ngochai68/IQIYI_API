@@ -16,7 +16,7 @@ export const getAllEpisodes = async (req: Request, res: Response): Promise<void>
 export const getEpisodeById = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   try {
-    const episode: IEpisode | null = await Episode.findOne({ id: Number(id) });
+    const episode: IEpisode | null = await Episode.findById(id);
     if (episode) {
       res.status(200).json(episode);
     } else {
@@ -43,7 +43,7 @@ export const updateEpisodeById = async (req: Request, res: Response): Promise<vo
   const { id } = req.params;
   try {
     const updatedEpisodeData: IEpisode = req.body; // Dữ liệu cập nhật được gửi qua body request
-    const episode: IEpisode | null = await Episode.findOneAndUpdate({ id: Number(id) }, updatedEpisodeData, { new: true });
+    const episode: IEpisode | null = await Episode.findByIdAndUpdate(id, updatedEpisodeData, { new: true });
     if (episode) {
       res.status(200).json(episode);
     } else {
@@ -58,7 +58,7 @@ export const updateEpisodeById = async (req: Request, res: Response): Promise<vo
 export const deleteEpisodeById = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   try {
-    const episode: IEpisode | null = await Episode.findOneAndDelete({ id: Number(id) });
+    const episode: IEpisode | null = await Episode.findByIdAndDelete(id);
     if (episode) {
       res.status(200).json({ message: 'Xóa tập phim thành công.' });
     } else {

@@ -16,7 +16,7 @@ export const getAllGenres = async (req: Request, res: Response): Promise<void> =
 export const getGenreById = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   try {
-    const genre: IGenre | null = await Genre.findOne({ id: Number(id) });
+    const genre: IGenre | null = await Genre.findById(id);
     if (genre) {
       res.status(200).json(genre);
     } else {
@@ -43,7 +43,7 @@ export const updateGenreById = async (req: Request, res: Response): Promise<void
   const { id } = req.params;
   try {
     const updatedGenreData: IGenre = req.body; // Dữ liệu cập nhật được gửi qua body request
-    const genre: IGenre | null = await Genre.findOneAndUpdate({ id: Number(id) }, updatedGenreData, { new: true });
+    const genre: IGenre | null = await Genre.findByIdAndUpdate(id, updatedGenreData, { new: true });
     if (genre) {
       res.status(200).json(genre);
     } else {
@@ -58,7 +58,7 @@ export const updateGenreById = async (req: Request, res: Response): Promise<void
 export const deleteGenreById = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
   try {
-    const genre: IGenre | null = await Genre.findOneAndDelete({ id: Number(id) });
+    const genre: IGenre | null = await Genre.findByIdAndDelete(id);
     if (genre) {
       res.status(200).json({ message: 'Xóa thể loại phim thành công.' });
     } else {

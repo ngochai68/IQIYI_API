@@ -11,6 +11,9 @@ import apiRoutes from "./routes/apiRoutes";
 // Tạo một ứng dụng Express
 const app = express();
 
+// Sử dụng bodyParser để phân tích các yêu cầu có phần thân là dữ liệu JSON
+app.use(bodyParser.json());
+
 // Cho phép truy cập từ tất cả các nguồn (không nên sử dụng trong môi trường sản xuất)
 app.use(cors());
 
@@ -22,9 +25,6 @@ const port = process.env.PORT || 3000;
 
 // Sử dụng apiRoutes
 app.use("/api", apiRoutes);
-
-// Sử dụng bodyParser để phân tích các yêu cầu có phần thân là dữ liệu JSON
-app.use(bodyParser.json());
 
 // Sử dụng cors để xử lý CORS (Cross-Origin Resource Sharing) trong các yêu cầu
 app.use(cors());

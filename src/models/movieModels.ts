@@ -1,50 +1,45 @@
 // src/models/movieModels.ts
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema, Document } from "mongoose";
 
 export interface IMovie extends Document {
-  id: number;
+  _id: string;
   title: string;
-  genre_ids: number[];
-  region_ids: number[];
   year_of_release: number;
-  upload_date: string;
-  episodes: number[];
   views: number;
-  director_ids: number[];
-  actor_ids: number[];
+  genre_ids: string[];
+  region_id: string;
+  directors: string[];
+  actors: string[];
   rating: number;
-  numberReviews: number;
+  number_reviews: number;
   producer: string;
-  img1: string;
-  img2: string;
   score: number;
   total_episodes: number;
   movie_format: number;
+  img1: string;
+  img2: string;
   description: string;
 }
 
 const movieSchema: Schema = new Schema({
-  id: { type: Number, required: true },
   title: { type: String, required: true },
-  genre_ids: { type: [Number], required: true },
-  region_ids: { type: [Number], required: true },
   year_of_release: { type: Number, required: true },
-  upload_date: { type: String, required: true },
-  episodes: { type: [Number], required: true },
-  views: { type: Number, required: true },
-  director_ids: { type: [Number], required: true },
-  actor_ids: { type: [Number], required: true },
-  rating: { type: Number, required: true },
-  numberReviews: { type: Number, required: true },
-  producer: { type: String, required: true },
+  views: { type: Number, default: 0 },
+  genre_ids: [{ type: String }],
+  region_id: { type: String, required: true },
+  directors: [{ type: String }],
+  actors: [{ type: String }],
+  rating: { type: Number, default: 0 },
+  number_reviews: { type: Number, default: 0 },
+  producer: { type: String },
+  score: { type: Number, default: 0 },
+  total_episodes: { type: Number },
+  movie_format: { type: Number },
   img1: { type: String, required: true },
   img2: { type: String, required: true },
-  score: { type: Number, required: true },
-  total_episodes: { type: Number, required: true },
-  movie_format: { type: Number, required: true },
-  description: { type: String, required: true },
+  description: { type: String },
 });
 
-const Movie = mongoose.model<IMovie>('Movie', movieSchema, 'Movies');
+const Movie = mongoose.model<IMovie>("Movie", movieSchema, "Movies");
 
 export default Movie;
