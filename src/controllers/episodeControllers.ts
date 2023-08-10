@@ -31,6 +31,20 @@ export const getEpisodeById = async (req: Request, res: Response): Promise<void>
 export const addEpisode = async (req: Request, res: Response): Promise<void> => {
   try {
     const newEpisode: IEpisode = req.body; // Dữ liệu của tập phim mới được gửi qua body request
+
+    // Lấy đường dẫn đã được multer lưu trữ trong req.file
+    const file: any = req.file;
+
+    if (file) {
+      const imgPath = file.path;
+
+      // Loại bỏ phần 'public/' khỏi đường dẫn và thay thế bằng '/'
+      const imgUrl = imgPath.replace("public\\", "/");
+
+      // Thêm http://localhost:3000 vào đường dẫn ảnh
+      newEpisode.img = `http://localhost:3000${imgUrl}`;
+    }
+
     const episode: IEpisode = await Episode.create(newEpisode);
     res.status(201).json(episode);
   } catch (error) {
